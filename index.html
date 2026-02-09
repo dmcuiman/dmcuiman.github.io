@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daniela Cuiman - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <header class="header">
+            <div class="profile-section">
+                <div class="profile-image">
+                    <img src="daniela.jpg" alt="Profile Picture">
+                </div>
+                <h1 class="name">Daniela Mariel C. Cuiman</h1>
+                <p class="location">
+                    <i data-lucide="map-pin"></i>
+                    P-3 Tabon, Bislig City, Surigao del Sur, Philippines
+                </p>
+              <div class="social-links">
+                <a href="https://www.facebook.com/Daniella.Cuiman" target="_blank" class="social-link" aria-label="Facebook">
+                    <i data-lucide="facebook"></i>
+                </a>
+                <a href="https://v2.onlinejobs.ph/jobseekers/info/4670778" target="_blank" class="social-link" aria-label="OnlineJobs.ph">
+                    <i data-lucide="briefcase"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/daniela-cuiman-536574344/" target="_blank" class="social-link" aria-label="LinkedIn">
+                    <i data-lucide="linkedin"></i>
+                </a>
+            </div>
+            </div>
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                <i data-lucide="sun" class="sun-icon"></i>
+                <i data-lucide="moon" class="moon-icon"></i>
+            </button>
+        </header>
+
+        <!-- Two Column Layout -->
+        <div class="two-column">
+            <!-- Left Column -->
+            <div class="left-column">
+                <!-- About Section -->
+                <section class="section about">
+                    <h2 class="section-title">
+                        <i data-lucide="user"></i>
+                        About
+                    </h2>
+                    <p class="about-text">
+                       Tech-driven student by day and creative strategist by night. Currently pursuing a BS in Computer Science at De La Salle John Bosco College, 
+                       I specialize in social media management and graphic design to help brands tell their story. Beyond the creative, I bring a strong background in 
+                       virtual assistance and customer service, where I prioritize proactive problem-solving, organized support, and clear communication. 
+                       I'm passionate about blending innovation with leadership to create digital spaces that foster growth, connection, and positive change.
+                    </p>
+                </section>
+
+                <!-- Recent Projects Section -->
+                <section class="section projects">
+                    <h2 class="section-title">
+                        <i data-lucide="folder"></i>
+                        Recent Projects
+                    </h2>
+                    <div class="projects-grid">
+                        <a href="https://ltracs.jbc-ssg.com/login.php" target="_blank" class="project-card">
+                            <div class="project-header">
+                                <h3 class="project-title">LTRACS</h3>
+                                <i data-lucide="external-link"></i>
+                            </div>
+                            <p class="project-description">
+                                A student attendance and penalty tracking system developed for the Higher Education Department of DLSJBC.
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag">HTML</span>
+                                <span class="tag">CSS</span>
+                                <span class="tag">JavaScript</span>
+                            </div>
+                        </a>
+                        <a href="https://budayaplus.cs-soft-eng.com" target="_blank" class="project-card">
+                            <div class="project-header">
+                                <h3 class="project-title">BudayaPlus Studio</h3>
+                                <i data-lucide="external-link"></i>
+                            </div>
+                            <p class="project-description">
+                               A web-based booking platform designed to streamline reservations for photography services.
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag">HTML</span>
+                                <span class="tag">CSS</span>
+                                <span class="tag">JavaScript</span>
+                            </div>
+                        </a>
+                        <a href="https://bisligtourism.cs-soft-eng.com/index.php" target="_blank" class="project-card">
+                            <div class="project-header">
+                                <h3 class="project-title">Bislig GIS Tourism Website</h3>
+                                <i data-lucide="external-link"></i>
+                            </div>
+                            <p class="project-description">
+                                An interactive mapping system highlighting tourist destinations and cultural sites in Bislig City.
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag">HTML</span>
+                                <span class="tag">CSS</span>
+                                <span class="tag">JavaScript</span>
+                            </div>
+                        </a>
+                    </div>
+                </section>
+
+                <!-- Skills Section -->
+                <section class="section skills">
+                    <h2 class="section-title">
+                        <i data-lucide="sparkles"></i>
+                        Skills & Attributes
+                    </h2>
+                    <div class="skills-grid">
+                        <div class="skill-tag">Time Management</div>
+                        <div class="skill-tag">Leadership</div>
+                        <div class="skill-tag">Communication</div>
+                        <div class="skill-tag">Problem Solving</div>
+                        <div class="skill-tag">Teamwork</div>
+                        <div class="skill-tag">Adaptability</div>
+                        <div class="skill-tag">Creativity</div>
+                        <div class="skill-tag">Critical Thinking</div>
+                        <div class="skill-tag">Organization</div>
+                        <div class="skill-tag">Attention to Detail</div>
+                    </div>
+                </section>
+
+                <!-- Designs Section -->
+                <section class="section designs">
+                    <h2 class="section-title">
+                        <i data-lucide="palette"></i>
+                        Designs
+                    </h2>
+                    <div class="carousel-container">
+                        <button class="carousel-btn prev" id="designPrevBtn" aria-label="Previous">
+                            <i data-lucide="chevron-left"></i>
+                        </button>
+                        <div class="carousel-wrapper square">
+                            <div class="carousel-track" id="designCarouselTrack">
+                                <div class="carousel-slide">
+                                    <img src="designs/design1.jpg" alt="Design 1">
+                                </div>
+                                <div class="carousel-slide">
+                                    <img src="designs/design2.jpg" alt="Design 2">
+                                </div>
+                                <div class="carousel-slide">
+                                    <img src="designs/design3.jpg" alt="Design 3">
+                                </div>
+                                <div class="carousel-slide">
+                                    <img src="designs/design4.jpg" alt="Design 4">
+                                </div>
+                                <div class="carousel-slide">
+                                    <img src="designs/design5.jpg" alt="Design 5">
+                                </div>
+                                  <div class="carousel-slide">
+                                    <img src="designs/design6.jpg" alt="Design 6">
+                                </div>
+                                  <div class="carousel-slide">
+                                    <img src="designs/design7.jpg" alt="Design 7">
+                                </div>
+                                  <div class="carousel-slide">
+                                    <img src="designs/design8.jpg" alt="Design 8">
+                                </div>
+                                <div class="carousel-slide">
+                                    <img src="designs/design9.jpg" alt="Design 9">
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-btn next" id="designNextBtn" aria-label="Next">
+                            <i data-lucide="chevron-right"></i>
+                        </button>
+                    </div>
+                    <div class="carousel-dots" id="designCarouselDots"></div>
+                </section>
+            </div>
+
+            <!-- Right Column -->
+            <div class="right-column">
+               <!-- Experience Section -->
+                <section class="section experience">
+                    <h2 class="section-title">
+                        <i data-lucide="briefcase"></i>
+                        Experience
+                    </h2>
+                    <div class="experience-list">
+                        <div class="experience-item">
+                            <div class="experience-header">
+                                <h3 class="experience-title">Lasallian Volunteer</h3>
+                                <span class="experience-date">
+                                    <i data-lucide="calendar"></i>
+                                    2023 - Present
+                                </span>
+                            </div>
+                            <p class="experience-company">
+                                <i data-lucide="building-2"></i>
+                                De La Salle John Bosco College
+                            </p>
+                            <p class="experience-description">
+                                Actively serving in community outreach and advocacy programs, upholding the Lasallian mission of faith, service, and communion.
+                            </p>
+                        </div>
+                        <div class="experience-item">
+                            <div class="experience-header">
+                                <h3 class="experience-title">SSG Page Media Handler</h3>
+                                <span class="experience-date">
+                                    <i data-lucide="calendar"></i>
+                                    2025 - Present
+                                </span>
+                            </div>
+                            <p class="experience-company">
+                                <i data-lucide="building-2"></i>
+                                De La Salle John Bosco College
+                            </p>
+                            <p class="experience-description">
+                                Managing the SSG's digital presence across social media platforms, creating engaging content, and ensuring timely communication of student government initiatives.
+                            </p>
+                        </div>
+                        <div class="experience-item">
+                            <div class="experience-header">
+                                <h3 class="experience-title">SSG President</h3>
+                                <span class="experience-date">
+                                    <i data-lucide="calendar"></i>
+                                    2025 - Present
+                                </span>
+                            </div>
+                            <p class="experience-company">
+                                <i data-lucide="building-2"></i>
+                                De La Salle John Bosco College
+                            </p>
+                            <p class="experience-description">
+                                Currently leading the Supreme Student Government in driving student initiatives, fostering leadership, and representing the student body.
+                            </p>
+                        </div>
+                        <div class="experience-item">
+                            <div class="experience-header">
+                                <h3 class="experience-title">Samahang Lasalyano Member</h3>
+                                <span class="experience-date">
+                                    <i data-lucide="calendar"></i>
+                                    2025 - Present
+                                </span>
+                            </div>
+                            <p class="experience-company">
+                                <i data-lucide="building-2"></i>
+                                De La Salle Philippines
+                            </p>
+                            <p class="experience-description">
+                                Engaged with the national network of Lasallian student councils across the Philippines, collaborating on initiatives that promote unity and leadership development.
+                            </p>
+                        </div>
+                        <div class="experience-item">
+                            <div class="experience-header">
+                                <h3 class="experience-title">CCS Multimedia Head</h3>
+                                <span class="experience-date">
+                                    <i data-lucide="calendar"></i>
+                                    2023 - 2024
+                                </span>
+                            </div>
+                            <p class="experience-company">
+                                <i data-lucide="building-2"></i>
+                                College of Computer Studies - DLSJBC
+                            </p>
+                            <p class="experience-description">
+                                Leading the multimedia team in producing visual content for college events, managing social media campaigns, and coordinating creative projects for the department.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Personal Side Section -->
+                <section class="section beyond">
+                    <h2 class="section-title">
+                        <i data-lucide="heart"></i>
+                        Personal Side
+                    </h2>
+                    <p class="beyond-text">
+                        When I'm not coding or designing, you'll find me immersed in Korean dramas and discovering new music. 
+                        I'm a huge fan of Taylor Swift—her storytelling inspires how I approach creativity. 
+                        I also have a soft spot for cats and love spending quiet moments with them. 
+                        These little joys keep me balanced and fuel my imagination.
+                    </p>
+                </section>
+
+                <!-- Snaps Section -->
+                <section class="section snaps">
+                    <h2 class="section-title">
+                        <i data-lucide="camera"></i>
+                        Snaps
+                    </h2>
+                    <div class="carousel-container">
+                        <button class="carousel-btn prev" id="prevBtn" aria-label="Previous">
+                            <i data-lucide="chevron-left"></i>
+                        </button>
+                        <div class="carousel-wrapper square">
+                            <div class="carousel-track" id="carouselTrack">
+                                <div class="carousel-slide">
+                                    <img src="snaps/snap1.jpg" alt="Snap 1">
+                                </div>
+                                <div class="carousel-slide">
+                                    <img src="snaps/snap2.jpg" alt="Snap 2">
+                                </div>
+                                <div class="carousel-slide">
+                                    <img src="snaps/snap3.jpg" alt="Snap 3">
+                                </div>
+                                <div class="carousel-slide">
+                                    <img src="snaps/snap4.jpg" alt="Snap 4">
+                                </div>
+                                <div class="carousel-slide">
+                                    <img src="snaps/snap5.jpg" alt="Snap 5">
+                                </div>
+                                <div class="carousel-slide">
+                                    <img src="snaps/snap6.jpg" alt="Snap 6">
+                                </div>
+                                <div class="carousel-slide">
+                                    <img src="snaps/snap7.jpg" alt="Snap 7">
+                                </div>
+                                <div class="carousel-slide">
+                                    <img src="snaps/snap8.jpg" alt="Snap 8">
+                                </div>
+                                <div class="carousel-slide">
+                                    <img src="snaps/snap9.jpg" alt="Snap 9">
+                                </div>
+                                <div class="carousel-slide">
+                                    <img src="snaps/snap10.jpg" alt="Snap 10">
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-btn next" id="nextBtn" aria-label="Next">
+                            <i data-lucide="chevron-right"></i>
+                        </button>
+                    </div>
+                    <div class="carousel-dots" id="carouselDots"></div>
+                </section>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>&copy; 2025-2026 Daniela Cuiman. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
