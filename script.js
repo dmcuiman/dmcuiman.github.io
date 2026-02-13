@@ -1,3 +1,15 @@
+// Preload images
+const preloadImages = [
+    'daniela.jpg',
+    'wacky.png',
+    'sleeping.png'
+];
+
+preloadImages.forEach(src => {
+    const img = new Image();
+    img.src = src;
+});
+
 // Initialize Lucide icons
 lucide.createIcons();
 
@@ -21,6 +33,9 @@ const images = {
 // Check for saved theme preference or default to light mode
 const currentTheme = localStorage.getItem('theme') || 'light';
 html.setAttribute('data-theme', currentTheme);
+
+// Set initial image based on theme
+profileImg.src = images[currentTheme].default;
 
 // Function to get current theme images
 function getCurrentImages() {
