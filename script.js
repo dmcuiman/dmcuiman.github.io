@@ -25,8 +25,7 @@ const images = {
         hover: 'wacky.png'
     },
     dark: {
-        default: 'daniela.jpg',
-        hover: 'sleeping.png'
+        default: 'sleeping.jpg'
     }
 };
 
@@ -213,3 +212,4 @@ if (document.getElementById('carouselTrack')) {
 if (document.getElementById('designCarouselTrack')) {
     initCarousel('designCarouselTrack', 'designPrevBtn', 'designNextBtn', 'designCarouselDots');
 }
+
