@@ -25,7 +25,8 @@ const images = {
         hover: 'wacky.png'
     },
     dark: {
-        default: 'sleeping.jpg'
+        default: 'sleeping.png',  // Changed from daniela.jpg to sleeping.png
+        hover: 'daniela.jpg'       // Changed from sleeping.png to daniela.jpg
     }
 };
 
@@ -212,4 +213,3 @@ if (document.getElementById('carouselTrack')) {
 if (document.getElementById('designCarouselTrack')) {
     initCarousel('designCarouselTrack', 'designPrevBtn', 'designNextBtn', 'designCarouselDots');
 }
-
