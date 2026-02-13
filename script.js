@@ -4,10 +4,40 @@ lucide.createIcons();
 // Theme Toggle Functionality
 const themeToggle = document.getElementById('themeToggle');
 const html = document.documentElement;
+const profileImg = document.getElementById('profileImg');
+
+// Image states
+const images = {
+    light: {
+        default: 'daniela.jpg',
+        hover: 'wacky.png'
+    },
+    dark: {
+        default: 'daniela.jpg',
+        hover: 'sleeping.png'
+    }
+};
 
 // Check for saved theme preference or default to light mode
 const currentTheme = localStorage.getItem('theme') || 'light';
 html.setAttribute('data-theme', currentTheme);
+
+// Function to get current theme images
+function getCurrentImages() {
+    const theme = html.getAttribute('data-theme');
+    return images[theme];
+}
+
+// Profile image hover effects
+profileImg.addEventListener('mouseenter', () => {
+    const currentImages = getCurrentImages();
+    profileImg.src = currentImages.hover;
+});
+
+profileImg.addEventListener('mouseleave', () => {
+    const currentImages = getCurrentImages();
+    profileImg.src = currentImages.default;
+});
 
 // Toggle theme
 themeToggle.addEventListener('click', () => {
@@ -16,6 +46,9 @@ themeToggle.addEventListener('click', () => {
     
     html.setAttribute('data-theme', newTheme);
     localStorage.setItem('theme', newTheme);
+    
+    // Reset profile image to default of new theme
+    profileImg.src = images[newTheme].default;
 });
 
 // Smooth scroll behavior
