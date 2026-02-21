@@ -25,8 +25,8 @@ const images = {
         hover: 'wacky.png'
     },
     dark: {
-        default: 'sleeping.png',  // Changed from daniela.jpg to sleeping.png
-        hover: 'daniela.jpg'       // Changed from sleeping.png to daniela.jpg
+        default: 'sleeping.png',
+        hover: 'daniela.jpg'
     }
 };
 
