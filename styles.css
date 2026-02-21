@@ -408,10 +408,10 @@ body {
     line-height: 1.5;
 }
 
-/* Skills Section */
+/* Skills / Tech Stack / Software Section */
 .skills-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
     gap: 12px;
 }
 
@@ -430,6 +430,31 @@ body {
 .skill-tag:hover {
     transform: translateY(-2px);
     background-color: var(--tag-bg);
+}
+
+/* Tech Stack Tags */
+.tech-tag {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    padding: 14px 10px;
+    font-size: 13px;
+}
+
+.tech-icon {
+    font-size: 20px;
+    line-height: 1;
+}
+
+/* Software Tags — same style as tech-tag */
+.software-tag {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    padding: 14px 10px;
+    font-size: 13px;
 }
 
 /* Beyond Coding Section */
@@ -550,7 +575,12 @@ body {
 @media (max-width: 968px) {
     .two-column {
         grid-template-columns: 1fr;
-        gap: 40px;
+        gap: 0;
+    }
+
+    .left-column,
+    .right-column {
+        width: 100%;
     }
 
     .container {
@@ -575,7 +605,7 @@ body {
     }
 
     .skills-grid {
-        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
     }
 
     .carousel-wrapper:not(.square) .carousel-slide {
@@ -590,5 +620,29 @@ body {
     .carousel-btn svg {
         width: 16px;
         height: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .skills-grid {
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    }
+
+    .tech-tag,
+    .software-tag {
+        padding: 12px 8px;
+        font-size: 12px;
+    }
+
+    .tech-icon {
+        font-size: 18px;
+    }
+
+    .name {
+        font-size: 20px;
+    }
+
+    .container {
+        padding: 48px 16px;
     }
 }
